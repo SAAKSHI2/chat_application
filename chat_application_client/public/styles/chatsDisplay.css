@@ -1,0 +1,194 @@
+
+.chat_parent_div{
+    background-image: url("../images/backgroundImage.jpg");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+}
+.groups{
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 5px rgb(175, 175, 174);
+  width: 400px; /* Set your desired width */
+  height: 100vh; /* Set your desired height */
+}
+
+.groups_div{
+
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 2px 2px 5px rgb(175, 175, 174);
+
+    width: 400px; /* Set your desired width */
+    height: 100vh; /* Set your desired height */
+    overflow: auto; /* Add a scrollbar for overflow content */
+  /* Custom scrollbar styles */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #3498db #ecf0f1; /* Track color and thumb color for Firefox */
+
+  /* Webkit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #c6d49a; 
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #ecf0f1; 
+  }
+  
+}
+
+.afterClick{
+    width: 72vw;
+    background-color: #F3EFE9;
+    border: none;
+    padding: 10px;
+    justify-content: unset;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 93vh;
+        
+}
+
+.groupEle{
+    border-bottom: solid 4px #00A884;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 3px;
+    color: #00A884;
+
+}
+.groupEle:hover{
+
+    background-color: #F0F2F5;
+    cursor: pointer;
+}
+
+.chatMsg{
+    border: solid 2px #ecf3ce;
+    border-radius: 35px;
+  
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 5px;
+
+    
+}
+
+.userName{
+    font-size:15px;
+    
+    color:#87AAB8;
+    font-weight:700
+}
+
+.newChatMsg{
+    border-radius: 35px;
+    margin-left:50vw;
+  background-color: #D9FDD3;
+  align-self: flex-end;
+
+
+} 
+
+
+.groups_div p{
+    margin: 0px;
+    padding-left:5%;
+    font-family: cursive;
+    font-size: 20px;
+  
+}
+.writeMsg{
+    position: fixed;
+}
+
+
+
+.writeMsg>input{
+    width: 62vw;          /* Set the width of the input field */
+    height: 6vh;
+    font-size: 20px;
+    padding: 10px;         /* Add padding inside the input field */
+    border: 2px solid #ccc; /* Add a 1px solid border with color #ccc */
+    /* border-radius: 15px;    Add a border-radius for rounded corners */
+    outline: none;         /* Remove the default focus outline */
+}
+
+.writeMsg>input:focus {
+    border-color: #007bff; /* Change the border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow */
+  }
+
+  .writeMsg>button{
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 10vw;
+    height: 9vh;
+    cursor: pointer;
+    background-color: #00A884;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .writeMsg>button:hover {
+    background-color: #77baab; 
+    box-shadow: 0px 0px 10px rgb(211, 251, 255);
+    color:rgb(98, 96, 96);
+  }
+
+
+.initialChat{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logOutButton{
+  /* border: none;
+  text-align: center;
+  text-decoration: none;
+  height: 8vh;
+  border-radius: 180px;
+  border-color: white;
+  margin-left: 21vw;
+  padding:7px;
+  font-size: 18px;
+  font-family: cursive;
+  color: #00A884; */
+  margin-left: 20.5vw;
+   background-color: #dc3545; /* Red color, you can change this */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+
+}
+.logOutButton:hover{
+  /* background-color: #77baab; 
+  box-shadow: 0px 0px 10px rgb(211, 251, 255);
+  cursor: pointer;
+  color:white; */
+  background-color: #c82333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
